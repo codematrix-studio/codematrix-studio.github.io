@@ -1747,27 +1747,116 @@ article.in #db-loop {
     letter-spacing: .02em;
 }
 
+/* Section heading reveal */
 #portfolio .portfolio-eyebrow,
 #portfolio .portfolio-inner > h2,
-#portfolio .portfolio-intro,
-#portfolio .portfolio-item {
+#portfolio .portfolio-intro {
     opacity: 0;
-    transform: translateY(24px);
+    transform: translateY(20px);
     transition: opacity .7s ease, transform .7s ease;
 }
 
 #portfolio.play .portfolio-eyebrow,
 #portfolio.play .portfolio-inner > h2,
-#portfolio.play .portfolio-intro,
-#portfolio.play .portfolio-item {
+#portfolio.play .portfolio-intro {
     opacity: 1;
     transform: translateY(0);
 }
 
 #portfolio.play .portfolio-inner > h2 { transition-delay: .08s; }
 #portfolio.play .portfolio-intro { transition-delay: .16s; }
-#portfolio.play .portfolio-item:nth-of-type(1) { transition-delay: .28s; }
-#portfolio.play .portfolio-item:nth-of-type(2) { transition-delay: .48s; }
+
+/* Project reveal: divider, index, content and details enter in sequence. */
+#portfolio .portfolio-item {
+    --item-delay: 0s;
+    border-top: 0;
+}
+
+#portfolio .portfolio-item:nth-of-type(1) { --item-delay: .25s; }
+#portfolio .portfolio-item:nth-of-type(2) { --item-delay: .43s; }
+#portfolio .portfolio-item:nth-of-type(3) { --item-delay: .61s; }
+#portfolio .portfolio-item:nth-of-type(4) { --item-delay: .79s; }
+#portfolio .portfolio-item:nth-of-type(5) { --item-delay: .97s; }
+#portfolio .portfolio-item:nth-of-type(6) { --item-delay: 1.15s; }
+
+#portfolio .portfolio-item:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #414141;
+    content: "";
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform .65s ease;
+}
+
+#portfolio .portfolio-item:after {
+    position: absolute;
+    top: 29px;
+    bottom: 34px;
+    left: -1px;
+    width: 2px;
+    background: lightgreen;
+    content: "";
+    transform: scaleY(0);
+    transform-origin: top center;
+    transition: transform .55s ease;
+    transition-delay: calc(var(--item-delay) + .18s);
+}
+
+#portfolio .portfolio-index,
+#portfolio .portfolio-main > *,
+#portfolio .portfolio-work > * {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity .5s ease, transform .5s ease;
+}
+
+#portfolio .portfolio-index { transition-delay: calc(var(--item-delay) + .12s); }
+#portfolio .portfolio-main h3 { transition-delay: calc(var(--item-delay) + .2s); }
+#portfolio .portfolio-main .portfolio-subtitle { transition-delay: calc(var(--item-delay) + .27s); }
+#portfolio .portfolio-main .portfolio-description { transition-delay: calc(var(--item-delay) + .34s); }
+#portfolio .portfolio-main .portfolio-link,
+#portfolio .portfolio-main .portfolio-project-links { transition-delay: calc(var(--item-delay) + .41s); }
+#portfolio .portfolio-work h4 { transition-delay: calc(var(--item-delay) + .3s); }
+#portfolio .portfolio-work li:nth-child(1) { transition-delay: calc(var(--item-delay) + .36s); }
+#portfolio .portfolio-work li:nth-child(2) { transition-delay: calc(var(--item-delay) + .42s); }
+#portfolio .portfolio-work li:nth-child(3) { transition-delay: calc(var(--item-delay) + .48s); }
+#portfolio .portfolio-work li:nth-child(4) { transition-delay: calc(var(--item-delay) + .54s); }
+#portfolio .portfolio-stack { transition-delay: calc(var(--item-delay) + .6s); }
+
+#portfolio.play .portfolio-item:before {
+    transform: scaleX(1);
+    transition-delay: var(--item-delay);
+}
+
+#portfolio.play .portfolio-item:after {
+    transform: scaleY(1);
+}
+
+#portfolio.play .portfolio-index,
+#portfolio.play .portfolio-main > *,
+#portfolio.play .portfolio-work > * {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    #portfolio .portfolio-item:hover:after {
+        transform: scaleY(1);
+        transition-delay: 0s;
+    }
+
+    #portfolio .portfolio-item h3 {
+        transition: color .25s ease;
+    }
+
+    #portfolio .portfolio-item:hover h3 {
+        color: lightgreen;
+    }
+}
 
 @media all and (max-width: 760px) {
     #portfolio {
@@ -1819,8 +1908,16 @@ article.in #db-loop {
     #portfolio .portfolio-eyebrow,
     #portfolio .portfolio-inner > h2,
     #portfolio .portfolio-intro,
-    #portfolio .portfolio-item {
+    #portfolio .portfolio-index,
+    #portfolio .portfolio-main > *,
+    #portfolio .portfolio-work > * {
         opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    #portfolio .portfolio-item:before,
+    #portfolio .portfolio-item:after {
         transform: none;
         transition: none;
     }
