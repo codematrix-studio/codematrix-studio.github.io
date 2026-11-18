@@ -1399,31 +1399,33 @@ article.in #db-loop {
     position: absolute;
     z-index: 100;
     top: 28px;
-    right: 34px;
+    left: 34px;
+    right: auto;
     display: block;
-    width: 360px;
-    max-width: 44vw;
-    max-height: 152px;
+    width: 480px;
+    max-width: 55vw;
+    max-height: 200px;
     line-height: 0;
 }
 
 #main .viewport > .site-logo img {
     display: block;
     width: 100%;
-    max-height: 152px;
+    max-height: 200px;
     object-fit: contain;
 }
 
 @media (max-width: 600px) {
     #main .viewport > .site-logo {
         top: 16px;
-        right: 16px;
-        width: 240px;
-        max-width: 64vw;
-        max-height: 104px;
+        left: 16px;
+        right: auto;
+        width: 320px;
+        max-width: 75vw;
+        max-height: 140px;
     }
 
     #main .viewport > .site-logo img {
-        max-height: 104px;
+        max-height: 140px;
     }
 }
