@@ -833,10 +833,12 @@ footer ul li a.nice-link:after {
 
 #main .world #hello > div > div:nth-of-type(3) {
     right: 100%;
-    top: 52%;
+    top: 31%;
     width: 0%;
+    height: 43%;
     border-left: none;
     border-top: 2px solid #2C2C2C;
+    border-right: 2px solid #2C2C2C;
 }
 
 #main .world #hello > div > div:nth-of-type(2) {
