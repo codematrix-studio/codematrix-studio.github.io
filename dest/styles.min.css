@@ -1375,6 +1375,6 @@ article.in #db-loop {
 /* Use a narrow, light typeface for the Cyrillic hero greeting. */
 #main .world #hello > div .ello > div {
     font-family: 'Roboto Condensed', Arial, sans-serif !important;
-    font-weight: 300 !important;
+    font-weight: 200 !important;
     -webkit-text-stroke: 0;
 }
