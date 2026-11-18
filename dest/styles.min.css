@@ -1565,7 +1565,7 @@ article.in #db-loop {
     position: relative;
     z-index: 1;
     min-height: 0;
-    padding: 20px 5% 58px;
+    padding: 28px 5% 58px;
     overflow: hidden;
     background: #202020;
     color: #A5A5A5;
@@ -1796,7 +1796,7 @@ article.in #db-loop {
     position: absolute;
     top: 29px;
     bottom: 34px;
-    left: -14px;
+    left: -15px;
     width: 2px;
     background: lightgreen;
     content: "";
@@ -1860,7 +1860,7 @@ article.in #db-loop {
 
 @media all and (max-width: 760px) {
     #portfolio {
-        padding: 16px 6% 42px;
+        padding: 22px 6% 42px;
     }
 
     #portfolio .portfolio-content {
@@ -1875,7 +1875,7 @@ article.in #db-loop {
 
 @media all and (max-width: 600px) {
     #portfolio {
-        padding: 14px 5% 34px;
+        padding: 20px 5% 34px;
     }
 
     #portfolio h2 {
