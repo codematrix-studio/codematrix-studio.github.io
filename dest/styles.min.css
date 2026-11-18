@@ -1345,3 +1345,15 @@ article.in #db-loop {
     pointer-events: none;
     -webkit-touch-callout: none;
 }
+
+/* Keep the hero information text sans-serif; these rules must override legacy font shorthands. */
+#main .world #hello > div {
+    font-family: 'Lato', Arial, sans-serif !important;
+}
+#main .world #hello > div > div:nth-of-type(2) {
+    font-family: 'Dosis', Arial, sans-serif !important;
+}
+#main .world #hello > div > div:nth-of-type(2) > div .big > strong,
+#main .world #hello > div > div:nth-of-type(2) > div .big > strong span {
+    font-family: 'Open Sans', Arial, sans-serif !important;
+}
