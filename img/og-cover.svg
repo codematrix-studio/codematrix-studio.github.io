@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#202020"/>
+<path d="M0 520H1200" stroke="#3b3b3b" stroke-width="1"/>
+<path d="M92 104V526" stroke="#90ee90" stroke-width="4"/>
+<text x="132" y="180" fill="#90ee90" font-family="Arial,sans-serif" font-size="24" letter-spacing="7">PHP / 1C-BITRIX</text>
+<text x="126" y="302" fill="#f4f4f4" font-family="Arial,sans-serif" font-size="76" font-weight="700" letter-spacing="1">CODEMATRIX</text>
+<text x="132" y="378" fill="#f4f4f4" font-family="Arial,sans-serif" font-size="48" font-weight="300" letter-spacing="12">STUDIO</text>
+<text x="132" y="462" fill="#bdbdbd" font-family="Arial,sans-serif" font-size="27">Разработка и развитие веб-систем</text>
+<circle cx="1060" cy="140" r="54" fill="none" stroke="#90ee90" stroke-width="2" opacity=".75"/>
+<path d="M1034 140h52M1060 114v52" stroke="#90ee90" stroke-width="2" opacity=".75"/>
+</svg>
