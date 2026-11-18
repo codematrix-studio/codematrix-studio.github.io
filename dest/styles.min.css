@@ -1435,7 +1435,7 @@ article.in #db-loop {
 #services {
     position: relative;
     z-index: 1;
-    padding: 76px 5% 84px;
+    padding: 76px 5% 42px;
     background: #202020;
     color: #A5A5A5;
     font-family: 'Open Sans', Arial, sans-serif;
@@ -1498,7 +1498,7 @@ article.in #db-loop {
 
 @media all and (max-width: 600px) {
     #services {
-        padding: 52px 5% 58px;
+        padding: 52px 5% 29px;
     }
 
     #services h2 {
