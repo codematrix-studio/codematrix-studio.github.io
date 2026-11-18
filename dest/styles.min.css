@@ -1401,16 +1401,16 @@ article.in #db-loop {
     top: 28px;
     right: 34px;
     display: block;
-    width: 180px;
-    max-width: 22vw;
-    max-height: 76px;
+    width: 360px;
+    max-width: 44vw;
+    max-height: 152px;
     line-height: 0;
 }
 
 #main .viewport > .site-logo img {
     display: block;
     width: 100%;
-    max-height: 76px;
+    max-height: 152px;
     object-fit: contain;
 }
 
@@ -1418,12 +1418,12 @@ article.in #db-loop {
     #main .viewport > .site-logo {
         top: 16px;
         right: 16px;
-        width: 120px;
-        max-width: 32vw;
-        max-height: 52px;
+        width: 240px;
+        max-width: 64vw;
+        max-height: 104px;
     }
 
     #main .viewport > .site-logo img {
-        max-height: 52px;
+        max-height: 104px;
     }
 }
