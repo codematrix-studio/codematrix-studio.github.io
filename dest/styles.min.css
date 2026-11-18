@@ -1398,8 +1398,8 @@ article.in #db-loop {
 #main .viewport > .site-logo {
     position: absolute;
     z-index: 100;
-    top: 28px;
-    left: 34px;
+    top: 0;
+    left: 0;
     right: auto;
     display: block;
     width: 480px;
@@ -1417,8 +1417,8 @@ article.in #db-loop {
 
 @media (max-width: 600px) {
     #main .viewport > .site-logo {
-        top: 16px;
-        left: 16px;
+        top: 0;
+        left: 0;
         right: auto;
         width: 320px;
         max-width: 75vw;
