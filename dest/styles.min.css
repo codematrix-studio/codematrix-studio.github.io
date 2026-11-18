@@ -1519,3 +1519,41 @@ article.in #db-loop {
         padding: 21px 18px;
     }
 }
+
+
+/* CodeMatrix Studio: reveal services on scroll */
+#services .services-inner > h2,
+#services .services-intro,
+#services .service-item {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity .7s ease, transform .7s ease;
+}
+
+#services.play .services-inner > h2,
+#services.play .services-intro,
+#services.play .service-item {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#services.play .services-intro {
+    transition-delay: .12s;
+}
+
+#services.play .service-item:nth-child(1) { transition-delay: .18s; }
+#services.play .service-item:nth-child(2) { transition-delay: .28s; }
+#services.play .service-item:nth-child(3) { transition-delay: .38s; }
+#services.play .service-item:nth-child(4) { transition-delay: .48s; }
+#services.play .service-item:nth-child(5) { transition-delay: .58s; }
+#services.play .service-item:nth-child(6) { transition-delay: .68s; }
+
+@media (prefers-reduced-motion: reduce) {
+    #services .services-inner > h2,
+    #services .services-intro,
+    #services .service-item {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
