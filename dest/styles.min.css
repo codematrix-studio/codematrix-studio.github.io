@@ -1358,3 +1358,12 @@ article.in #db-loop {
     font-family: 'Open Sans', Arial, sans-serif !important;
 }
 
+/* Keep the experience figure and its suffix inside the visible header area. */
+#main .world #hello > div > div:nth-of-type(2) > div .big {
+    display: inline-block;
+    position: relative;
+    width: 5.4em;
+    height: 1.15em;
+    overflow: visible;
+    vertical-align: baseline;
+}
