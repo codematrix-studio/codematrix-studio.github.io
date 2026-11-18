@@ -1435,7 +1435,8 @@ article.in #db-loop {
 #services {
     position: relative;
     z-index: 1;
-    padding: 76px 5% 42px;
+    min-height: 0;
+    padding: 76px 5% 20px;
     background: #202020;
     color: #A5A5A5;
     font-family: 'Open Sans', Arial, sans-serif;
@@ -1498,7 +1499,7 @@ article.in #db-loop {
 
 @media all and (max-width: 600px) {
     #services {
-        padding: 52px 5% 29px;
+        padding: 52px 5% 12px;
     }
 
     #services h2 {
@@ -1563,7 +1564,8 @@ article.in #db-loop {
 #portfolio {
     position: relative;
     z-index: 1;
-    padding: 76px 5% 58px;
+    min-height: 0;
+    padding: 20px 5% 58px;
     overflow: hidden;
     background: #202020;
     color: #A5A5A5;
@@ -1769,7 +1771,7 @@ article.in #db-loop {
 
 @media all and (max-width: 760px) {
     #portfolio {
-        padding: 58px 6% 42px;
+        padding: 16px 6% 42px;
     }
 
     #portfolio .portfolio-content {
@@ -1784,7 +1786,7 @@ article.in #db-loop {
 
 @media all and (max-width: 600px) {
     #portfolio {
-        padding: 46px 5% 34px;
+        padding: 14px 5% 34px;
     }
 
     #portfolio h2 {
