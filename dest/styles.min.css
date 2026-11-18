@@ -1796,7 +1796,7 @@ article.in #db-loop {
     position: absolute;
     top: 29px;
     bottom: 34px;
-    left: -1px;
+    left: -14px;
     width: 2px;
     background: lightgreen;
     content: "";
